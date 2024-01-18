@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./tailwind.css" rel="stylesheet" />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Triple I - Clean Up Service & Demolition</title>
+  </head>
+  <body style="font-family: 'Open Sans', sans-serif">
+    <header>
+      <!-- FIXED NAV -->
+
+      <nav
+        class="hidden md:flex flex-row justify-between items-center text-sm bg-darkGray py-2 px-4 fixed z-50 w-full gap-4 shadow-md"
+      >
+        <div class="h-10">
+          <img
+            src="./img/logos/logo-full.png"
+            alt="Logo Triple-I"
+            class="object-fit w-full h-full"
+          />
+        </div>
+        <div class="flex flex-row grow justify-center max-w-[1000px]">
+          <ul
+            class="flex flex-row grow justify-center gap-2 md:gap-6 font-normal text-center text-white cursor-pointer items-center lg:text-base"
+          >
+            <li
+              class="hover:underline hover:text-secondary transition-all ease-in"
+            >
+              <a href="#hero">Home</a>
+            </li>
+            <li
+              class="hover:underline hover:text-secondary transition-all ease-in"
+            >
+              <a href="#about">About Us</a>
+            </li>
+            <li
+              class="hover:underline hover:text-secondary transition-all ease-in"
+            >
+              <a href="#departamentos">Cargo carried</a>
+            </li>
+
+            <li
+              class="hover:underline hover:text-secondary transition-all ease-in"
+            >
+              <a href="#contacto">Contact</a>
+            </li>
+            <li
+              class="hover:underline hover:text-secondary transition-all ease-in"
+            >
+              <a href="#sucursales">Location</a>
+            </li>
+          </ul>
+        </div>
+        <div class="w-ful min-w-32">
+          <button
+            type="button"
+            class="bg-primary text-white py-2 px-4 font-bold text-lg flex gap-2 items-center sm:text-xs lg:text-base w-full hover:bg-none hover:border-2 hover:border-white transition-all ease-in"
+          >
+            <div>
+              <img src="./img/icons/call-wt.png" alt="Ícono llamada" class="" />
+            </div>
+            <span class="text-nowrap">(939) 252 4501</span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- MOBILE NAV -->
+
+      <nav
+        class="md:hidden fixed flex-row justify-between items-center text-sm bg-darkGray z-50 w-full shadow-md top-0 flex py-3 px-4"
+      >
+        <div class="flex flex-row items-center justify-between text-sm w-full">
+          <div class="h-10">
+            <img
+              src="./img/logos/logo-icon.png"
+              class="object-contain h-full w-full rounded-lg"
+              alt="Logo ícono"
+            />
+          </div>
+          <div class="flex items-center gap-2">
+            <button
+              type="button"
+              class="rounded-full font-bold text-lg items-center sm:text-xs lg:text-base"
+            >
+              <div
+                class="text-lg text-darkGray cursor-pointer hover:border-2 hover:border-primary transition-all ease-in py-1 px-4"
+              >
+                <img
+                  src="./img/icons/call-wt.png"
+                  alt="Ícono llamada"
+                  class="object-cover"
+                />
+              </div>
+            </button>
+            <div
+              class="text-lg text-darkGray cursor-pointer hover:border-2 transition-all ease-in hover:border-primary h-8 p-1"
+            >
+              <img
+                src="./img/icons/bars-wt.png"
+                alt="Menú mobile"
+                class="object-cover w-full h-full"
+              />
+
+              <div
+                id="menu"
+                class="flex flex-col grow justify-center absolute top-[64px] right-[0] shadow-lg"
+              >
+                <ul
+                  class="navbar flex flex-col grow justify-evenly font-medium text-darkGray text-center divide-y z-20 bg-white"
+                >
+                  <li
+                    class="flex py-3 px-6 justify-center items-center self-stretch hover:bg-primary transition-all ease-in hover:bg-opacity-50"
+                  >
+                    <a href="#hero">Home</a>
+                  </li>
+                  <li
+                    class="flex py-3 px-6 justify-center items-center self-stretch hover:bg-primary transition-all ease-in hover:bg-opacity-50"
+                  >
+                    <a href="#about">About Us</a>
+                  </li>
+                  <li
+                    class="flex py-3 px-6 justify-center items-center self-stretch hover:bg-primary transition-all ease-in hover:bg-opacity-50"
+                  >
+                    <a href="#departamentos">Cargo carried</a>
+                  </li>
+                  <li
+                    class="flex py-3 px-6 justify-center items-center self-stretch hover:bg-primary transition-all ease-in hover:bg-opacity-50"
+                  >
+                    <a href="#contacto">Contact</a>
+                  </li>
+                  <li
+                    class="flex py-3 px-6 justify-center items-center self-stretch hover:bg-primary transition-all ease-in hover:bg-opacity-50"
+                  >
+                    <a href="#sucursales">Location</a>
+                  </li>
+                  <li
+                    class="flex py-3 px-6 justify-center items-center self-stretch hover:bg-primary transition-all ease-in hover:bg-opacity-50"
+                  >
+                    <a href="#horarios">Hours</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- BANNER PROMOCIONAL -->
+
+      <section>
+        <div
+          class="w-full bg-primary text-white text-sm sm-banner flex justify-between items-center pt-8 pb-4 md:pt-4 px-4 absolute top-[50px] lg:top-[50px] z-30"
+        >
+          <div>
+            <img src="./img/icons/arrow-left-wt.png" alt="Arrow left" />
+          </div>
+          <p class="text-center">Up to <strong>70% OFF</strong></p>
+          <div>
+            <img src="./img/icons/arrow-right-wt.png" alt="Arrow right" />
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <!-- HERO -->
+
+      <section
+        id="hero"
+        class="text-center flex flex-col md:flex-row items-center justify-center h-[800px] md:h-[600px] mt-[50px] md:mt-0 md:top-[20px] bg-hero-mobile md:bg-third bg-center bg-cover bg-no-repeat"
+      >
+        <div
+          class="hidden md:flex md:w-1/2 justify-center items-center h-full pt-0 md:pt-[60px] max-h-[470px] md:max-h-full"
+        >
+          <img
+            src="./img/banner-desktop.png"
+            alt="iPhone 15 Pro"
+            class="object-cover md:h-full h-[130%] max-h-[610px] w-full pt-10"
+          />
+        </div>
+        <div
+          class="flex flex-col justify-center items-center w-[80%] md:w-1/2 h-[85%] md:bg-black pt-36 md:h-full gap-8 text-white"
+        >
+          <div class="w-full md:w-2/3 flex flex-col items-center gap-8">
+            <h1 class="text-5xl uppercase font-bold">Wrecking Experts</h1>
+            <p class="font-semibold text-xl md:text-2xl">
+              Quality Demolition and Cleanup in Houston, Texas
+            </p>
+          </div>
+          <div class="w-full flex flex-col items-center">
+            <div
+              class="flex flex-row items-center justify-center w-[80%] md:w-1/2 max-w-[342px]"
+            >
+              <button
+                type="submit"
+                class="bg-primary text-darkGray py-2 px-4 font-semibold text-lg flex gap-2 items-center justify-center w-full hover:bg-prymary transition-all ease-in rounded-lg"
+              >
+                Contact us
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOBRE NOSOTROS -->
+
+      <section id="about" class="bg-darkGray">
+        <div class="flex flex-col items-center py-16">
+          <div
+            class="flex flex-col items-center w-[90%] md:w-1/2 max-w-[700px]"
+          >
+            <div class="flex flex-col justify-center items-center gap-8">
+              <div class="h-32">
+                <img
+                  src="./img/logos/logo-full.png"
+                  alt="Logotipo Nitza's Jewerly"
+                  class="object-contain h-full w-full"
+                />
+              </div>
+
+              <div class="flex flex-col gap-4">
+                <div
+                  class="text-white flex flex-col text-center font-semibold gap-4"
+                >
+                  <p>
+                    Welcome to Triple I Cleanup Service and Demolitions, your
+                    trusted partner in wrecking and demolition work based in the
+                    heart of Houston, Texas.
+                  </p>
+                  <p>
+                    With a rich history spanning seven years, our organization
+                    is a key player in the Construction - Special Trade
+                    Contractors sector.
+                  </p>
+                  <p>
+                    Choose Triple I Cleanup Service and Demolitions for a
+                    reliable partner in transforming spaces, and let us exceed
+                    your expectations with our expertise and dedication to
+                    excellence.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DEPARTAMENTOS -->
+
+      <section
+        id="departamentos"
+        class="flex justify-center bg-primary text-darkGray"
+      >
+        <div
+          class="flex flex-col items-center w-[90%] md:w-9/12 pt-16 pb-24 max-w-[1000px]"
+        >
+          <h2 class="font-bold text-center mb-10 text-2xl md:text-5xl">
+            Cargo carried
+          </h2>
+          <div
+            class="flex flex-wrap justify-evenly sm:justify-evenly md:justify-around gap-x-2 md:gap-x-16 gap-y-20 h-full w-full"
+          >
+            <!-- CARD 01 -->
+
+            <div
+              class="flex flex-col justify-center items-center text-center mb-4"
+            >
+              <div class="rounded-full w-32 h-32 mb-4">
+                <img
+                  src="img/departamentos/DD01s.png"
+                  alt="Household goods"
+                  class="object-cover h-full w-full"
+                />
+                <div>
+                  <h4 class="font-semibold mt-4">Household goods</h4>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 02 -->
+
+            <div
+              class="flex flex-col justify-center items-center text-center mb-4"
+            >
+              <div class="rounded-full w-32 h-32 mb-4">
+                <img
+                  src="img/departamentos/DD02s.png"
+                  alt="Metal: sheets, coils, rolls"
+                  class="object-cover h-full w-full"
+                />
+                <div>
+                  <h4 class="font-semibold mt-4">
+                    Metal: sheets, coils, rolls
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 03 -->
+
+            <div
+              class="flex flex-col justify-center items-center text-center mb-4"
+            >
+              <div class="rounded-full w-32 h-32 mb-4">
+                <img
+                  src="img/departamentos/DD03s.png"
+                  alt="Drive/Tow away"
+                  class="object-cover h-full w-full"
+                />
+                <div>
+                  <h4 class="font-semibold mt-4">Drive/Tow away</h4>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 04 -->
+
+            <div
+              class="flex flex-col justify-center items-center text-center mb-4"
+            >
+              <div class="rounded-full w-32 h-32 mb-4">
+                <img
+                  src="img/departamentos/DD04s.png"
+                  alt="Logs, Poles, Beams, Lumber"
+                  class="object-cover h-full w-full"
+                />
+                <div>
+                  <h4 class="font-semibold mt-4">Logs, Poles, Beams, Lumber</h4>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 05 -->
+
+            <div
+              class="flex flex-col justify-center items-center text-center mb-4"
+            >
+              <div class="rounded-full w-32 h-32 mb-4">
+                <img
+                  src="img/departamentos/DD05s.png"
+                  alt="Building materials"
+                  class="object-cover h-full w-full"
+                />
+                <div>
+                  <h4 class="font-semibold mt-4">Building materials</h4>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 06 -->
+
+            <div
+              class="flex flex-col justify-center items-center text-center mb-4"
+            >
+              <div class="rounded-full w-32 h-32 mb-4">
+                <img
+                  src="img/departamentos/DD06s.png"
+                  alt="Paper products"
+                  class="object-cover h-full w-full"
+                />
+                <div>
+                  <h4 class="font-semibold mt-4">Paper products</h4>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 07 -->
+
+            <div
+              class="flex flex-col justify-center items-center text-center mb-4"
+            >
+              <div class="rounded-full w-32 h-32 mb-4">
+                <img
+                  src="img/departamentos/DD07s.png"
+                  alt="Grain, Feed, Hay"
+                  class="object-cover h-full w-full"
+                />
+                <div>
+                  <h4 class="font-semibold mt-4">Grain, Feed, Hay</h4>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 08 -->
+
+            <div
+              class="flex flex-col justify-center items-center text-center mb-4"
+            >
+              <div class="rounded-full w-32 h-32 mb-4">
+                <img
+                  src="img/departamentos/DD08s.png"
+                  alt="Oilfield equipment"
+                  class="object-cover h-full w-full"
+                />
+                <div>
+                  <h4 class="font-semibold mt-4">Oilfield equipment</h4>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 09 -->
+
+            <div
+              class="flex flex-col justify-center items-center text-center mb-4"
+            >
+              <div class="rounded-full w-32 h-32 mb-4">
+                <img
+                  src="img/departamentos/DD09s.png"
+                  alt="Construction"
+                  class="object-cover h-full w-full"
+                />
+                <div>
+                  <h4 class="font-semibold mt-4">Construction</h4>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 10 -->
+
+            <div
+              class="flex flex-col justify-center items-center text-center mb-4"
+            >
+              <div class="rounded-full w-32 h-32 mb-4">
+                <img
+                  src="img/departamentos/DD010s.png"
+                  alt="Livestock"
+                  class="object-cover h-full w-full"
+                />
+                <div>
+                  <h4 class="font-semibold mt-4">Livestock</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIOS -->
+
+      <section class="flex items-center py-16 flex-col">
+        <div
+          class="w-[90%] md:w-full flex flex-col items-center max-w-[1000px]"
+        >
+          <h2 class="font-bold text-center text-2xl md:text-5xl">
+            Some of our reviews
+          </h2>
+
+          <!-- CARDS -->
+          <div class="md:hidden">
+            <div class="testimonial-container py-16">
+              <!-- CARD 01 -->
+
+              <div
+                class="flex flex-row gap-4 sm:flex-wrap items-centers py-8 justify-center"
+              >
+                <div class="w-full flex flex-col items-center gap-4">
+                  <div class="flex flex-col items-center text-center gap-4">
+                    <p class="text-gray-500">
+                      <strong>"</strong>Triple I came highly recommended and
+                      didn't disappoint. Great and timely service. I wouldn't
+                      use anyone else for cleanup/demo service.<strong
+                        >"</strong
+                      >
+                    </p>
+                    <h4 class="font-semibold">Luis Rodríguez</h4>
+                    <div>
+                      <img src="img/icons/google.png" alt="Google logo" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 02 -->
+
+              <div
+                class="flex flex-row gap-4 sm:flex-wrap items-centers py-8 w-full justify-center"
+              >
+                <div
+                  class="w-full md:w-[30%] min-w-[280px] flex flex-col items-center gap-4"
+                >
+                  <div class="flex flex-col items-center text-center gap-4">
+                    <p class="text-gray-500">
+                      <strong>"</strong>Good Clean up Services<strong>"</strong>
+                    </p>
+                    <h4 class="font-semibold">Luis Navarrete</h4>
+                    <div>
+                      <img src="img/icons/google.png" alt="Google logo" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 03 -->
+
+              <div
+                class="flex flex-row gap-4 sm:flex-wrap items-centers py-8 w-full justify-center"
+              >
+                <div
+                  class="w-full md:w-[30%] min-w-[280px] flex flex-col items-center gap-4"
+                >
+                  <div class="flex flex-col items-center text-center gap-4">
+                    <p class="text-gray-500">
+                      <strong>"</strong>Mi sofá quedó fantástico<strong
+                        >"</strong
+                      >
+                    </p>
+                    <h4 class="font-semibold">CoProp</h4>
+                    <div>
+                      <img src="img/icons/google.png" alt="Google logo" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- DOTS -->
+
+            <div class="flex gap-2 justify-center mb-8">
+              <span
+                class="h-4 w-4 bg-lightGray rounded-full inline-block hover:bg-mediumGray transition-all ease-in"
+              ></span>
+              <span
+                class="h-4 w-4 bg-lightGray rounded-full inline-block hover:bg-mediumGray transition-all ease-in"
+              ></span>
+              <span
+                class="h-4 w-4 bg-lightGray rounded-full inline-block hover:bg-mediumGray transition-all ease-in"
+              ></span>
+            </div>
+          </div>
+
+          <!-- PARA ESCRITORIO -->
+
+          <div
+            class="hidden md:flex flex-row gap-8 sm:flex-row sm:flex-wrap items-center md:items-start py-16 w-full justify-evenly"
+          >
+            <!-- CARD 01 -->
+
+            <div class="w-[30%] min-w-[280px]">
+              <div class="flex flex-col items-center gap-4">
+                <div class="h-32 w-32 shadow-xl rounded-full">
+                  <img
+                    src="./img/review/RR01s.png"
+                    alt="Luis Rodríguez"
+                    class="object-cover"
+                  />
+                </div>
+
+                <div class="flex flex-col items-center text-center gap-4">
+                  <p class="text-gray-500">
+                    <strong>"</strong>Triple I came highly recommended and
+                    didn't disappoint. Great and timely service. I wouldn't use
+                    anyone else for cleanup/demo service.<strong>"</strong>
+                  </p>
+                  <h4 class="font-semibold">Luis Rodríguez</h4>
+                  <div>
+                    <img src="img/icons/google.png" alt="Google logo" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 02 -->
+
+            <div
+              class="flex flex-row gap-4 sm:flex-wrap items-center justify-center w-[30%] min-w-[280px]"
+            >
+              <div class="flex flex-col items-center gap-4 w-full">
+                <div class="h-32 w-32 shadow-xl rounded-full">
+                  <img
+                    src="./img/review/RR02s.png"
+                    alt="Luis Navarrete"
+                    class="object-coverl"
+                  />
+                </div>
+
+                <div class="flex flex-col items-center text-center gap-4">
+                  <p class="text-gray-500">
+                    <strong>"</strong>Good Clean up Services<strong>"</strong>
+                  </p>
+                  <h4 class="font-semibold">Luis Navarrete</h4>
+                  <div>
+                    <img src="img/icons/google.png" alt="Google logo" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 03 -->
+
+            <div style="width: 30%" class="w-[30%] min-w-[280px]">
+              <div class="flex flex-col items-center gap-4">
+                <div class="h-32 w-32 shadow-xl rounded-full">
+                  <img
+                    src="./img/review/RR03s.png"
+                    alt="CoProp"
+                    class="object-cover"
+                  />
+                </div>
+
+                <div class="flex flex-col items-center text-center gap-4">
+                  <p class="text-gray-500">
+                    <strong>"</strong>Mi sofá quedó fantástico<strong>"</strong>
+                  </p>
+                  <h4 class="font-semibold">CoProp</h4>
+                  <div>
+                    <img src="img/icons/google.png" alt="Google logo" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTO -->
+
+      <section id="contacto" class="flex justify-center bg-darkGray">
+        <div
+          class="flex flex-col md:flex-row py-20 w-[90%] lg:w-9/12 gap-8 text-white max-w-[1000px]"
+        >
+          <div class="flex flex-col gap-8 md:w-1/2">
+            <h2
+              class="font-bold md:mb-10 text-2xl text-center md:text-4xl md:text-left"
+            >
+              Let's start your project
+              <br />
+              ¡Contact us!
+            </h2>
+            <div class="font-semibold md:inline-block" hidden>
+              <div class="flex items-center mb-7">
+                <img src="./img/icons/sms-w.png" alt="Icon message" />
+                <p class="ms-4 break-all">igonz71@yahoo.com</p>
+              </div>
+              <div class="flex items-center mb-7">
+                <img src="./img/icons/call-line-w.png" alt="Icon call" />
+                <div class="flex flex-col gap-y-2 ms-4">
+                  <p>(281) 657 7968</p>
+                </div>
+              </div>
+              <div class="flex items-center mb-7">
+                <img src="./img/icons/clock-w.png" alt="Icon clock" />
+                <div class="flex flex-col ms-4 gap-y-4">
+                  <p><strong>Hours:</strong></p>
+                  <p>Monday - Saturday: 7:00 am - 5:00 pm</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col md:w-1/2 gap-4 w-full">
+            <!-- FORMULARIO -->
+
+            <form class="flex flex-col gap-4 h-full text-white">
+              <div class="flex flex-col md:flex-row gap-4 w-full">
+                <div class="relative md:w-1/2">
+                  <input
+                    type="text"
+                    name="firstName"
+                    id="firstName"
+                    required
+                    maxlength="32"
+                    pattern="[A-Za-z\s]{1,32}"
+                    title="Nombres"
+                    class="w-full h-12 bg-white p-2 text-mediumGray invalid:border-pink-500 invalid:text-pink-600"
+                    placeholder="Name(s)"
+                  />
+                  <span class="inline-block">
+                    This field cannot be empty, e.g. John
+                  </span>
+                </div>
+                <div class="relative md:w-1/2">
+                  <input
+                    type="text"
+                    name="lastName"
+                    id="lastName"
+                    maxlength="32"
+                    pattern="[A-Za-z]{1,32}"
+                    required
+                    class="w-full h-12 bg-white p-4 text-mediumGray invalid:border-pink-500 invalid:text-pink-600"
+                    placeholder="Last name(s)"
+                  />
+                  <span class="inline-block"
+                    >This field cannot be empty, e.g. Doe</span
+                  >
+                </div>
+              </div>
+
+              <div class="col-span-2 relative">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="w-full h-12 bg-white p-4 text-mediumGray invalid:border-pink-500 invalid:text-pink-600"
+                  pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                  required
+                  placeholder="Email"
+                />
+                <span class="inline-block">
+                  This field cannot be empty, e.g. correo@example.com
+                </span>
+              </div>
+
+              <div class="col-span-2 relative">
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  class="w-full h-12 bg-white p-4 text-mediumGray invalid:border-pink-500 invalid:text-pink-600"
+                  pattern="^\+[1-9]{1}[0-9]{3,14}$"
+                  required
+                  placeholder="Phone number"
+                />
+                <span class="inline-block">
+                  This field cannot be empty, e.g. +27 123 4567
+                </span>
+              </div>
+              <div class="col-span-2 row-span-6 h-full relative">
+                <textarea
+                  name="message"
+                  id="message"
+                  required
+                  class="w-full h-32 bg-white p-4 resize-none invalid:border-pink-500 text-mediumGray invalid:text-pink-600"
+                  placeholder="Write a message"
+                ></textarea>
+              </div>
+            </form>
+
+            <div
+              class="mt-4 opacity-50 transition-opacity hover:opacity-100 hover:ease-in"
+            >
+              <button
+                type="submit"
+                class="bg-primary md:w-1/2 text-white py-2 px-4 font-semibold text-lg flex gap-2 items-center justify-center w-full hover:bg-primary transition-all ease-in"
+              >
+                Send message
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SUCURSALES -->
+
+      <section id="sucursales" class="flex justify-center">
+        <div
+          class="w-full md:w-9/12 flex flex-col md:flex-row justify-center py-16 gap-10"
+        >
+          <h2
+            class="font-bold text-2xl text-center md:text-left md:text-5xl py-4 md:hidden"
+          >
+            Doubts? Visit us!
+          </h2>
+
+          <div class="md:w-1/2">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13827.744745657252!2d-95.4740074!3d29.9525141!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c9558c67291d%3A0x40db57f893092f95!2sTriple%20I!5e0!3m2!1sen!2sus!4v1705592685337!5m2!1sen!2sus"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div
+            class="md:w-1/2 text-darkGray flex-col justify-center items-center gap-12 hidden md:flex"
+          >
+            <h2 class="font-bold text-2xl text-center md:text-left md:text-5xl">
+              Doubts? Visit us!
+            </h2>
+            <p class="text-2xl">2518 Milroy Ln, Houston, TX 7706</p>
+          </div>
+          <div
+            class="w-full text-lg py-4 px-4 md:hidden font-semibold text-neutralGray"
+          >
+            <p class="font-bold text-darkGray leading-8 break-all">
+              2518 Milroy Ln, Houston, TX 7706
+            </p>
+            <p>Phone number: (281) 657 7968</p>
+            <p class="break-all">E-mail: sales@lozanoupholstery.com</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- HORARIOS -->
+
+      <section id="horarios" class="bg-white">
+        <div
+          class="flex flex-col items-center text-neutralGray gap-y-4 md:hidden text-lg font-semibold max-w-[1000px] py-16 px-4"
+        >
+          <p class="font-bold text-black text-2xl">Hours:</p>
+          <p>Monday - Saturday: 7:00am - 5:00pm.</p>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+
+      <section class="flex justify-center bg-mediumGray">
+        <div
+          class="flex flex-col items-center w-[90%] md:w-9/12 py-16 text-white max-w-[1000px]"
+        >
+          <h2 class="font-bold mb-10 text-2xl md:text-4xl">FAQs</h2>
+          <div class="divide-y w-full">
+            <!-- QUESTION 1 -->
+
+            <div>
+              <div class="flex justify-between py-6">
+                <div class="font-bold">Where are you located?</div>
+                <button class="text-white text-2xl">+</button>
+              </div>
+              <div class="pb-4 text-white divide-y">
+                We are located on 2518 Milroy Ln, Houston, TX, USA.
+              </div>
+            </div>
+
+            <!-- QUESTION 2 -->
+
+            <div>
+              <div class="flex justify-between py-6">
+                <div class="font-bold">
+                  How can I talk to you about a project?
+                </div>
+                <button class="text-white text-2xl">+</button>
+              </div>
+              <div class="pb-4 text-white divide-y">
+                “Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam
+                delectus nihil. Aut enim doloremque et ipsam.”
+              </div>
+            </div>
+
+            <!-- QUESTION 3 -->
+
+            <div>
+              <div class="flex justify-between py-6">
+                <div class="font-bold">Is Triple I licensed and insured?</div>
+                <button class="text-white text-2xl">+</button>
+              </div>
+              <div class="pb-4 text-white divide-y">
+                “Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam
+                delectus nihil. Aut enim doloremque et ipsam.”
+              </div>
+            </div>
+
+            <!-- QUESTION 4 -->
+
+            <div>
+              <div class="flex justify-between py-6">
+                <div class="font-bold">How long does a demolition take?</div>
+                <button class="text-white text-2xl">+</button>
+              </div>
+              <div class="pb-4 text-white divide-y">
+                “Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam
+                delectus nihil. Aut enim doloremque et ipsam.”
+              </div>
+            </div>
+
+            <!-- QUESTION 5 -->
+
+            <div>
+              <div class="flex justify-between py-6">
+                <div class="font-bold">
+                  Can you handle waste disposal after demolition?
+                </div>
+                <button class="text-white text-2xl">+</button>
+              </div>
+              <div class="pb-4 text-white divide-y">
+                “Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam
+                delectus nihil. Aut enim doloremque et ipsam.”
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <section
+        class="bg-darkGray flex flex-col justify-center items-center py-16"
+      >
+        <div class="w-[90%] max-w-[1000px]">
+          <div
+            class="w-full flex flex-col md:flex-row gap-8 md:items-center justify-evenly pb-16"
+          >
+            <div class="flex flex-col items-center gap-6 md:max-w-[255px]">
+              <div
+                class="justify-self-center self-center flex justify-center items-center h-24 md:h-28"
+              >
+                <img
+                  src="img/logos/logo-full.png"
+                  alt="Ícono del logo"
+                  class="object-ccover h-full"
+                />
+              </div>
+              <div
+                class="text-white opacity-50 text-5xl flex flex-row justify-evenly mb-6 sm:mb-0 gap-8 w-2/3"
+              >
+                <img src="./img/icons/whatsapp-w.png" alt="Icon whatsapp" />
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center gap-y-4 sm:mb-0 text-white"
+            >
+              <h3 class="font-bold">Site Map</h3>
+              <ul class="grid gap-y-4 underline opacity-60">
+                <li class="sm:hidden"><a href="#hero">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#departamentos">Cargo carried</a></li>
+              </ul>
+            </div>
+            <div class="text-white opacity-60 flex flex-col justify-center">
+              <ul class="grid gap-y-4 underline">
+                <li><a href="#contacto">Contact</a></li>
+                <li><a href="#sucursales">Locations</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr class="opacity-50 w-[90%]" />
+        <span
+          class="sm:text-center text-white opacity-60 pt-8 mb-8 w-[90%] md:w-3/5"
+          >2024,Triple I - Clean Up Service & Demolition. All rights
+          reserved.</span
+        >
+      </section>
+    </footer>
+  </body>
+</html>
